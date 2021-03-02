@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Colorful Imaginations with Pokemon AI</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Oxygen:400,700" rel="stylesheet">
+
+    <link rel="stylesheet" href="../static/css/animate.css">
+    <link rel="stylesheet" href="../static/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../static/css/jquery.fancybox.min.css">
+
+    <link rel="stylesheet" href="../static/fonts/ionicons/css/ionicons.min.css">
+    <link rel="stylesheet" href="../static/fonts/fontawesome/css/font-awesome.min.css">
+
+    <!-- Theme Style -->
+    <link rel="stylesheet" href="../static/css/style.css">
+
+  </head>
+  <body>
+    
+    <header role="banner">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand " href="{{ url_for('homepage') }}">AI Imaginations with Pokemon</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarsExample05">
+            <ul class="navbar-nav pl-md-5 ml-auto">
+              <li class="nav-item">
+                <a class="nav-link " href="{{ url_for('homepage') }}">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{{ url_for('aboutus') }}">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="{{ url_for('demos_page') }}">Demos</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle " href="{{ url_for('report') }}" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Reports</a>
+                <div class="dropdown-menu" aria-labelledby="dropdown04">
+                  <a class="dropdown-item" href="{{ url_for('report1') }}">Report 1</a>
+                  <a class="dropdown-item" href="{{ url_for('report2') }}">Report 2</a>
+                  <a class="dropdown-item" href="{{ url_for('report3') }}">Report 3</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{{ url_for('blog') }}">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{{ url_for('contact') }}">Contact</a>
+              </li>
+            </ul>
+
+          
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- END header -->
+
+    <div class="top-shadow"></div>
+
+    <div class="inner-page">
+    <div class="slider-item" style="background-image: url('images/xy_wallpaper5_1920x1200.jpg');">
+        
+        <div class="container">
+          <div class="row slider-text align-items-center justify-content-center">
+            <div class="col-md-8 text-center col-sm-12 element-animate pt-5">
+              <h1 class="pt-5"><span>Demo Day!</span></h1>
+              <p class="mb-5 w-75 pl-0">Check out this amazing demo of our skills in action.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!-- END slider -->
+    </div>
+    
+    <section class="section border-t pb-0">
+      <div class="container">
+        <div class="row justify-content-center mb-5 element-animate">
+          <div class="col-md-8 text-center" >
+            <h2 class=" heading mb-4">Your Prediction! <Section></Section></h2>
+            <br>
+            <br>
+            <table class="table-bordered" style="width:100%">
+                <tr>
+                  <th>Pokémon</th>
+                  <th>Probability (%)</th>
+                </tr>
+                <tr>
+                  <td>{{ predictions.class1 }}</td>
+                  <td>{{ predictions.prob1 }}</td>
+                </tr>
+                </table> <a href="{{ url_for('demos_page') }}"><button class="button mt-3">Try again?</button></a>
+            <br>
+            <br>
+            <div class="media d-block media-custom text-center">
+              <a href="#"><img src="{{path.url_to_upload}}" alt="Image Placeholder" class="img-fluid"></a>
+              <div class="media-body">
+                <h3 class="mt-0 text-black">Uploaded Image</h3>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      
+    <!-- END .block-4 -->
+    </section>
+
+    <footer class="site-footer" role="contentinfo">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md-4 mb-5">
+            <h3>About Us</h3>
+            <p class="mb-5">A collective group of computer geniuses tempting fate with project 3.</p>
+            <ul class="list-unstyled footer-link d-flex footer-social">
+              <li><a href="https://twitter.com/pokemon" class="p-2"><span class="fa fa-twitter"></span></a></li>
+              <li><a href="https://www.facebook.com/Pokemon/" class="p-2"><span class="fa fa-facebook"></span></a></li>
+              <!-- <li><a href="#" class="p-2"><span class="fa fa-linkedin"></span></a></li> -->
+              <li><a href="https://www.instagram.com/pokemon/" class="p-2"><span class="fa fa-instagram"></span></a></li>
+            </ul>
+
+          </div>
+          <div class="col-md-5 mb-5 pl-md-5">
+            <h3>Contact Info</h3>
+            <ul class="list-unstyled footer-link">
+              <li class="d-block">
+                <span class="d-block">Address:</span>
+                <span >111 LA Street, Los Angeles,CA United States</span></li>
+              <li class="d-block"><span class="d-block">Telephone:</span><span >+1 310 555 1212</span></li>
+              <li class="d-block"><span class="d-block">Email:</span><span >info@pokemonai.com</span></li>
+            </ul>
+          </div>
+          <div class="col-md-3 mb-5">
+            <h3>Quick Links</h3>
+            <ul class="list-unstyled footer-link">
+              <li><a href="https://www.pokemon.com/us/about-pokemon/">About</a></li>
+              <li><a href="https://www.pokemon.com/us/terms-of-use/">Terms of Use</a></li>
+              <li><a href="https://www.pokemon.com/us/legal/">Disclaimers</a></li>
+              <li><a href="https://support.pokemon.com/hc/en-us">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+          
+          </div>
+        </div>
+        
+        </div>
+      </div>
+    </footer>
+    <!-- END footer -->
+
+    <!-- loader -->
+    <div id="loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#f4b214"/></svg></div>
+
+    <script src="../static/js/jquery-3.2.1.min.js"></script>
+    <script src="../static/js/popper.min.js"></script>
+    <script src="../static/js/bootstrap.min.js"></script>
+    <script src="../static/js/owl.carousel.min.js"></script>
+    <script src="../static/js/jquery.waypoints.min.js"></script>
+    <script src="../static/js/jquery.fancybox.min.js"></script>
+    <script src="../static/js/main.js"></script>
+
+    <script src="../static/js/main.js"></script>
+    
+  </body>
+</html>

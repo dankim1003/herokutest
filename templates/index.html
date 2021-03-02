@@ -1,39 +1,379 @@
+
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <title>Colorful Imaginations with Pokemon AI</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Oxygen:400,700" rel="stylesheet">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Pet Pals!</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
-</head>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/reset.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="../static/css/animate.css">
+    <link rel="stylesheet" href="../static/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../static/css/jquery.fancybox.min.css">
 
-<body>
-    <div class="container">
-        <div class="jumbotron" style="text-align: center">
-            <h1>Pet Pal</h1>
-            <p>Find your pet a pal!</p>
+    <link rel="stylesheet" href="../static/fonts/ionicons/css/ionicons.min.css">
+    <link rel="stylesheet" href="../static/fonts/fontawesome/css/font-awesome.min.css">
+
+    <!-- Theme Style -->
+    <link rel="stylesheet" href="../static/css/style.css">
+
+  </head>
+  <body>
+    
+    <header role="banner">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand " href="index.html">AI Imaginations with Pokemon</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarsExample05">
+            <ul class="navbar-nav pl-md-5 ml-auto">
+              <li class="nav-item">
+                <a class="nav-link active" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="demos.html">Demos</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="reports.html" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Reports</a>
+                <div class="dropdown-menu" aria-labelledby="dropdown04">
+                  <a class="dropdown-item" href="report1.html">Report 1</a>
+                  <a class="dropdown-item" href="report2.html">Report 2</a>
+                  <a class="dropdown-item" href="report3.html">Report 3</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="blog.html">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>         
+          </div>
         </div>
+      </nav>
+    </header>
+    <!-- END header -->
 
-        <div class="row">
-            <div class="col-md-12">
-                <h2>Look at all of the current pet pals!</h2>
-                <div id="plot"></div>
+    <div class="top-shadow"></div>
+
+    <section class="home-slider owl-carousel">
+      <div class="slider-item" style="background-image: url('../static/images/pikachu-photos_resized_1300x915.png');">
+        <div class="container">
+          <div class="row slider-text align-items-center justify-content-center">
+            <div class="col-lg-7 text-center col-sm-12 element-animate">
+              <!-- <div class="btn-play-wrap mx-auto"><p class="mb-4"><a href="https://vimeo.com/59256790" data-fancybox data-ratio="2" class="btn-play"><span class="ion ion-ios-play"></span></a></p></div> -->
+              <h1 class="mb-4"><span>Colorful AI Imaginations</span></h1>
+              <p class="mb-5 w-75">Exploring the world of AI with Pokemon.</p>
             </div>
+          </div>
         </div>
+      </div>
 
-        <div class="row">
-            <div class="col-md-12">
-                <h2><a href="/send">Add your pet here!</a></h2>
+      <div class="slider-item" style="background-image: url('../static/images/wallpapersden.com_pokemon-pikachu-art_resized_1300x915.png');">
+        <div class="container">
+          <div class="row slider-text align-items-center justify-content-center">
+            <div class="col-lg-7 text-center col-sm-12 element-animate">
+              <!-- <div class="btn-play-wrap mx-auto"><p class="mb-4"><a href="https://vimeo.com/59256790" data-fancybox data-ratio="2" class="btn-play"><span class="ion ion-ios-play"></span></a></p></div> -->
+              <h1><span>Create, Enhance and Explore</span></h1>
+              <p class="mb-5 w-75">Follow along as we explore deep learning and AI.</p>
             </div>
+          </div>
         </div>
+        
+      </div>
+
+    </section>
+    <!-- END slider -->
     </div>
+    
+    <section class="section bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-lg-4 element-animate ">
+            <div class="media block-6 d-block text-center">
+              <div class="icon mb-3"><span class="ion-bookmark text-primary"></span></div>
+              <div class="media-body">
+                <h3 class="heading">Global Challenge</h3>
+                <p>The Global Challenge winter online competition is on the way.</p>
+              </div>
+            </div>  
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.min.js"></script>
+          </div>
+          <div class="col-md-6 col-lg-4 element-animate ">
+            <div class="media block-6 d-block text-center">
+              <div class="icon mb-3"><span class="ion-heart text-primary"></span></div>
+              <div class="media-body">
+                <h3 class="heading">Top Deck Academy</h3>
+                <p>Cramorant and Arrokudo swallow the competition.</p>
+              </div>
+            </div> 
 
-    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-    <script src="{{ url_for('static', filename='js/app.js') }}"></script>
-</body>
+          </div>
+          <div class="col-md-6 col-lg-4 element-animate ">
+            <div class="media block-6 d-block text-center">
+              <div class="icon mb-3"><span class="ion-leaf text-primary"></span></div>
+              <div class="media-body">
+                <h3 class="heading">The Adventure Continues</h3>
+                <p>New Netflix episodes of Pokemon Journeys: The Series on March 5. The research, battles and adventures continue with new episodes.></p>
+              </div>
+            </div> 
 
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END section -->
+
+    <section class="section">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-12 text-center">
+            <h2>We Are Team No-Name</h2>
+          </div>
+        </div>
+        <div class="row align-items-stretch">
+          <div class="col-lg-4 order-lg-1">
+            <div class="h-100"><div class="frame h-100"><div class="feature-img-bg h-100" style="background-image: url('../static/images/bw7_wallpaper4_1920.jpg');"></div></div></div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 feature-1-wrap d-md-flex flex-md-column order-lg-1" >
+
+            <div class="feature-1 d-md-flex">
+              <div class="align-self-center">
+                <span class="ion ion-leaf display-4 text-primary"></span>
+                <h3>Green Energy</h3>
+                <p>Even the all-powerful Pokemon has no control over our AI simulation.</p>
+              </div>
+            </div>
+
+            <div class="feature-1 d-md-flex">
+              <div class="align-self-center">
+                <span class="ion ion-android-bulb display-4 text-primary"></span>
+                <h3>Precision Mechanics</h3>
+                <p>Our cutting-edge programming techniques are a sight to behold.</p>
+              </div>
+            </div>
+
+          </div>
+          
+          <div class="col-md-6 col-lg-4 feature-1-wrap d-md-flex flex-md-column order-lg-3" >
+
+            <div class="feature-1 d-md-flex">
+              <div class="align-self-center">
+                <span class="ion ion-alert-circled display-4 text-primary"></span>
+                <h3>Construction Machines</h3>
+                <p>Working away night and day to bring you project 3 under continual construction.</p>
+              </div>
+            </div>
+
+            <div class="feature-1 d-md-flex">
+              <div class="align-self-center">
+                <span class="ion ion-android-happy display-4 text-primary"></span>
+                <h3>Reliable and Stable</h3>
+                <p>Who knew Pokemon would have so much information we could use?</p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="section border-t pb-0">
+      <div class="container">
+        <div class="row justify-content-center mb-5 element-animate">
+          <div class="col-md-8 text-center">
+            <h2 class=" heading mb-4">Featured Pokemon</h2>
+            <p class="mb-5 lead">Take a look at your favorite Pokemon. We highlight 6 characters each month.</p>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <div class="row no-gutters">
+          <div class="col-md-4 element-animate">
+            <a href="https://www.pokemon.com/us/pokedex/dragapult" class="link-thumbnail">
+              <h3>Dragapult</h3>
+              <span class="ion-plus icon"></span>
+              <img src="../static/images/887_Dragapult_894x533.png" alt="Image" class="img-fluid">
+            </a>
+          </div>
+          <div class="col-md-4 element-animate">
+            <a href="https://www.pokemon.com/us/pokedex/jumpluff" class="link-thumbnail">
+              <h3>Jumpluff</h3>
+              <span class="ion-plus icon"></span>
+              <img src="../static/images/189_Jumpluff_894x533.png" alt="Image" class="img-fluid">
+            </a>
+          </div>
+          <div class="col-md-4 element-animate">
+            <a href="https://www.pokemon.com/us/pokedex/yanmega" class="link-thumbnail">
+              <h3>Yanmega</h3>
+              <span class="ion-plus icon"></span>
+              <img src="../static/images/469_Yanmega_894x533.png" alt="Image" class="img-fluid">
+            </a>
+          </div>
+          <div class="col-md-4 element-animate">
+            <a href="https://www.pokemon.com/us/pokedex/staraptor" class="link-thumbnail">
+              <h3>Staraptor</h3>
+              <span class="ion-plus icon"></span>
+              <img src="../static/images/398_Staraptor_894x533.png" alt="Image" class="img-fluid">
+            </a>
+          </div>
+          <div class="col-md-4 element-animate">
+            <a href="https://www.pokemon.com/us/pokedex/machamp" class="link-thumbnail">
+              <h3>Machamp</h3>
+              <span class="ion-plus icon"></span>
+              <img src="../static/images/068_Machamp_894x533.png" alt="Image" class="img-fluid">
+            </a>
+          </div>
+          <div class="col-md-4 element-animate">
+            <a href="https://www.pokemon.com/us/pokedex/togepi" class="link-thumbnail">
+              <h3>Togepi</h3>
+              <span class="ion-plus icon"></span>
+              <img src="../static/images/175_Togepi_894x533.png" alt="Image" class="img-fluid">
+            </a>
+          </div>
+        </div>
+        
+      </div>
+    </section>
+    <!-- END section -->
+
+    <!-- END .block-4 -->
+    </section>
+
+    <section class="section blog">
+      <div class="container">
+
+        <div class="row justify-content-center mb-5 element-animate">
+          <div class="col-md-8 text-center">
+            <h2 class=" heading mb-4">Recent Blog Posts</h2>
+            <p class="mb-5 lead">All the latest news fit to print in the world of Pokemon.</p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6">
+
+            <div class="media mb-4 d-md-flex d-block element-animate">
+              <a href="https://www.pokemon.com/us/pokemon-news/get-a-showstopping-pikachu-in-pokemon-sword-or-pokemon-shield/" class="mr-5"><img src="../static/images/pikachu-sing-169-en_1280x853.png" alt="Blog Post" class="img-fluid"></a>
+              <div class="media-body">
+                <span class="post-meta">Feb 25, 2021</span>
+                <h3 class="mt-2 text-black"><a href="https://www.pokemon.com/us/pokemon-news/get-a-showstopping-pikachu-in-pokemon-sword-or-pokemon-shield/">Get a Showstopping Pikachu in Pokemon Sword or or Pokemon Shield.</a></h3>
+                <p><a href="https://www.pokemon.com/us/pokemon-news/get-a-showstopping-pikachu-in-pokemon-sword-or-pokemon-shield/" class="readmore">Read More <span class="ion-android-arrow-dropright-circle"></span></a></p>
+              </div>
+            </div>
+
+            <div class="media mb-4 d-md-flex d-block element-animate">
+              <a href="https://www.pokemon.com/us/pokemon-news/pokemon-tcg-top-deck-academy-episode-4-cramorant-and-arrokuda-swallow-the-competition/" class="mr-5"><img src="../static/images/top-deck-academy-169_1280x853.png" alt="Blog Post" class="img-fluid"></a>
+              <div class="media-body">
+                <span class="post-meta">Feb 25, 2021</span>
+                <h3 class="mt-2 text-black"><a href="https://www.pokemon.com/us/pokemon-news/pokemon-tcg-top-deck-academy-episode-4-cramorant-and-arrokuda-swallow-the-competition/">Pokemon TCG Top Deck Academy Episode 4: Cramorant and Arrokuda swallow the competition</a></h3>
+                <p><a href="https://www.pokemon.com/us/pokemon-news/pokemon-tcg-top-deck-academy-episode-4-cramorant-and-arrokuda-swallow-the-competition/" class="readmore">Read More <span class="ion-android-arrow-dropright-circle"></span></a></p>
+              </div>
+            </div>
+
+
+          </div>
+          <div class="col-md-6">
+            <div class="media mb-4 d-md-flex d-block element-animate">
+              <a href="https://www.pokemon.com/us/pokemon-news/watch-ashs-musical-adventures-in-episodes-on-pokemon-tv/" class="mr-5"><img src="../static/images/music-169-en.png" alt="Blog Post" class="img-fluid"></a>
+              <div class="media-body">
+                <span class="post-meta">Feb 26, 2021</span>
+                <h3 class="mt-2 text-black"><a href="https://www.pokemon.com/us/pokemon-news/watch-ashs-musical-adventures-in-episodes-on-pokemon-tv/">Watch Ash's Musical Adventures in Episodes on Pokemon TV</a></h3>
+                <p><a href="https://www.pokemon.com/us/pokemon-news/watch-ashs-musical-adventures-in-episodes-on-pokemon-tv/" class="readmore">Read More <span class="ion-android-arrow-dropright-circle"></span></a></p>
+              </div>
+            </div>
+
+            <div class="media mb-4 d-md-flex d-block element-animate">
+              <a href="https://www.pokemon.com/us/pokemon-news/the-adventure-continues-with-new-netflix-episodes-of-pokemon-journeys-the-series-on-march-5/" class="mr-5"><img src="../static/images/season23-on-netflix-169_1280x853.png" alt="Blog Post" class="img-fluid"></a>
+              <div class="media-body">
+                <span class="post-meta">Feb 24, 2021</span>
+                <h3 class="mt-2 text-black"><a href="https://www.pokemon.com/us/pokemon-news/the-adventure-continues-with-new-netflix-episodes-of-pokemon-journeys-the-series-on-march-5/">The Adventure Continues with New Netflix Episodes of Pokemon Journeys: The Series on March 5</a></h3>
+                <p><a href="https://www.pokemon.com/us/pokemon-news/the-adventure-continues-with-new-netflix-episodes-of-pokemon-journeys-the-series-on-march-5/" class="readmore">Read More <span class="ion-android-arrow-dropright-circle"></span></a></p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section bg-primary">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-8">
+            <h2 class="text-white mb-0">Explore More!</h2>
+            <p class="text-white lead">Watch Post Malone Make Music with Pokemon.</p>
+          </div>
+          <div class="col-lg-4 text-lg-right">
+            <a href="https://25.pokemon.com/en-us/music/p25music-concert?&utm_source=us_pcom&utm_medium=blog&utm_campaign=p25&utm_term=concert" class="btn btn-outline-white px-4 py-3">Watch the Concert</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="site-footer" role="contentinfo">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md-4 mb-5">
+            <h3>About Us</h3>
+            <p class="mb-5">Making the world a better place through Pokemon AI animation.</p>
+            <ul class="list-unstyled footer-link d-flex footer-social">
+              <li><a href="https://twitter.com/pokemon" class="p-2"><span class="fa fa-twitter"></span></a></li>
+              <li><a href="https://www.facebook.com/Pokemon/" class="p-2"><span class="fa fa-facebook"></span></a></li>
+              <!-- <li><a href="#" class="p-2"><span class="fa fa-linkedin"></span></a></li> -->
+              <li><a href="https://www.instagram.com/pokemon/" class="p-2"><span class="fa fa-instagram"></span></a></li>
+            </ul>
+
+          </div>
+          <div class="col-md-5 mb-5 pl-md-5">
+            <h3>Contact Info</h3>
+            <ul class="list-unstyled footer-link">
+              <li class="d-block">
+                <span class="d-block">Address:</span>
+                <span >111 LA Street, Los Angeles, CA United States</span></li>
+              <li class="d-block"><span class="d-block">Telephone:</span><span >+1 310 555 1212</span></li>
+              <li class="d-block"><span class="d-block">Email:</span><span >info@pokemonai.com</span></li>
+            </ul>
+          </div>
+          <div class="col-md-3 mb-5">
+            <h3>Quick Links</h3>
+            <ul class="list-unstyled footer-link">
+              <li><a href="https://www.pokemon.com/us/about-pokemon/">About</a></li>
+              <li><a href="https://www.pokemon.com/us/terms-of-use/">Terms of Use</a></li>
+              <li><a href="https://www.pokemon.com/us/legal/">Disclaimers</a></li>
+              <li><a href="https://support.pokemon.com/hc/en-us">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+          
+          </div>
+        </div>
+        </div>
+      </div>
+    </footer>
+    <!-- END footer -->
+
+    <!-- loader -->
+    <div id="loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#f4b214"/></svg></div>
+
+    <script src="../static/js/jquery-3.2.1.min.js"></script>
+    <script src="../static/js/popper.min.js"></script>
+    <script src="../static/js/bootstrap.min.js"></script>
+    <script src="../static/js/owl.carousel.min.js"></script>
+    <script src="../static/js/jquery.waypoints.min.js"></script>
+    <script src="../static/js/jquery.fancybox.min.js"></script>
+    <script src="../static/js/main.js"></script>
+
+    <script src="../static/js/main.js"></script>
+    
+  </body>
 </html>
