@@ -115,5 +115,5 @@ def prediction(filename):    #go to the web page "prediction"
     #return render_template('predict.html')
 
 
-if __name__ == '__main__':
-    app.run(debug=True)
+if __name__ == "__main__":
+    app.run()
